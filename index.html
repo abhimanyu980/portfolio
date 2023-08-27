@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d10149c2d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="#" class="logo"> -->
+                <ul id="sidemenu">
+                    <li> <a href="#header"> Home</a> </li>
+                    <li> <a href="#about"> About</a> </li>
+                    <!-- <li> <a href="#services">Skills</a> </li> -->
+                    <li> <a href="#portfolio">Projects</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Computer Science Student</p>
+                <h1>Hi, I'm <span>Abhimanyu</span> Sharma <br> from NIIT UNIVERSITY</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- About----------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/abhi.jpeg" alt="user" >
+
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a B.Tech Computer Science Engineering (CSE) student, I possess a strong foundation in computer science concepts and a passion for exploring emerging technologies. With a keen interest in data science and machine learning, I am actively seeking opportunities to apply my theoretical knowledge in practical settings. I have developed programming skills in language Python and I am Committed to continuous learning, I am eager to contribute to innovative projects and collaborate with a dynamic team to drive technological advancements. </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Internship</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br> </li>
+                            <!-- <li><span>SQL</span><br> Lorem ipsum dolor sit amet consectetur.</li> -->
+                            <li><span>Machine Learning</span><br></li>
+                            <li><span>Problem Solving</span><br></li>
+                            <li><span>ChatGPT Prompt Engineering for Developers</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Prodigy InfoTech</span><br> Doing assigned tasks and projects, gaining proficiency in data analysis, machine learning, and programming.and  Acquireing practical knowledge in data manipulation, visualization, and predictive modeling.</li>
+                            <!-- <li><span>SQL</span><br> Lorem ipsum dolor sit amet consectetur.</li>
+                            <li><span>Data Analytics</span><br> Lorem ipsum dolor sit amet consectetur.</li>
+                            <li><span>Machine Learning</span><br> Lorem ipsum dolor sit amet consectetur.</li>
+                            <li><span>Statistics & Probability</span><br> Lorem ipsum dolor sit amet consectetur.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2024</span><br> B.Tech in CSE<br>NIIT UNIVERSITY.</li>
+                            <li><span>2020</span><br>Intermediate <br>Delhi Public School</li>
+                            <!-- <li><span>Data Analytics</span><br> Lorem ipsum dolor sit amet consectetur.</li>
+                            <li><span>Machine Learning</span><br> Lorem ipsum dolor sit amet consectetur.</li>
+                            <li><span>Statistics & Probability</span><br> Lorem ipsum dolor sit amet consectetur.</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------                   Services                   ------------------------>
+<!-- 
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis natus sint rerum praesentium. Necessitatibus, nobis repudiandae officiis reprehenderit ipsa aspernatur? Molestiae laboriosam quae necessitatibus vero id voluptas obcaecati a officia.</p>
+                    <a href="#"> Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis natus sint rerum praesentium. Necessitatibus, nobis repudiandae officiis reprehenderit ipsa aspernatur? Molestiae laboriosam quae necessitatibus vero id voluptas obcaecati a officia.</p>
+                    <a href="#"> Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis natus sint rerum praesentium. Necessitatibus, nobis repudiandae officiis reprehenderit ipsa aspernatur? Molestiae laboriosam quae necessitatibus vero id voluptas obcaecati a officia.</p>
+                    <a href="#"> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-------------------------- Portfolio ----------------->
+
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="./images/1683063487113.jpg" alt="work1">
+            <div class="layer">
+                <h3>Desktop Voice Assistant with OpenAI Integration:
+                </h3>
+                <p>Created a versatile desktop voice assistant using Python and added a special touch by including OpenAI's GPT-3 API. This made the assistant really good at understanding language and coming up with responses.
+                </p>
+                <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="./images/aqi_mini-1200x675.png" alt="work1">
+            <div class="layer">
+                <h3>Air Quality Index Prediction
+                </h3>
+                <p>Made a computer program that can guess how clean or polluted the air is, using information about past weather and pollution levels. Worked on making the program smarter by preparing the data it uses. This step is like cleaning and organizing information so the program can understand it better.
+</p>
+                <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+            
+        </div>
+        <!-- <div class="work">
+            <img src="images/work-3.png" alt="work1">
+            <div class="layer">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate aperiam ab accusamus.
+                </p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square"></i> </a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See More</a> -->
+</div>
+
+</div>
+
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-light fa-envelopes"></i>abhimanyu.sharma20@st.niituniversity.in
+
+                </p>
+                <p> <i class="fa-light fa-envelopes"></i>+91-8307816758</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abhimanyu-sharma-013987240/" target="_blank"><i class="fa-brands fa-linkedin"></i> </a>
+                    <a href="https://github.com/abhimanyu980" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/__abhimanyu.___/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                </div>
+                <a href="./abhi_resume.pdf" target="_blank" download class="btn btn2">Download Resume</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your_Name" required>
+                    <input type="email" name="Email" placeholder="Your_Email" required>
+                    <textarea name="Message"   rows="10" placeholder="Your_Message"></textarea>
+                    <br>
+                    <button type="submit" class="btn btn3"> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Abhimanyu Sharma <i class="fa-solid fa-ghost"></i> </p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+
+
+    </script>
+    
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwmUGDn4Qs7VC-sKH2-BycYIcJautL-B_prHLrGv9-yJVle6uZ694TjvX04Y4GklwoV/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
